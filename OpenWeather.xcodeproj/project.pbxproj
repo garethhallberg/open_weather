@@ -117,6 +117,7 @@
 		CF10ECF92498AE0500D11813 /* OpenWeather */ = {
 			isa = PBXGroup;
 			children = (
+				CF10ED082498AE0700D11813 /* Info.plist */,
 				CF10ED232498BE5700D11813 /* Models */,
 				CF10ED202498B53B00D11813 /* Services */,
 				CF10ED1F2498B51C00D11813 /* ViewControllers */,
@@ -143,7 +144,6 @@
 				CF10ED002498AE0500D11813 /* Main.storyboard */,
 				CF10ED032498AE0700D11813 /* Assets.xcassets */,
 				CF10ED052498AE0700D11813 /* LaunchScreen.storyboard */,
-				CF10ED082498AE0700D11813 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
