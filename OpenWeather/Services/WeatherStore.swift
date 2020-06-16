@@ -13,7 +13,7 @@ class WeatherStore {
     public static let shared = WeatherStore()
     init() {}
     private let apiKey = K.APIKey
-    private let baseAPIURL = "https://api.openweathermap.org/data/2.5"
+    private let baseAPIURL = "http://api.openweathermap.org/data/2.5"
     private let urlSession = URLSession.shared
     
     ///daily?q=Hull&cnt=GB&appid=96f2d47a11bf0aa1eb6964cd4cc3a0bc

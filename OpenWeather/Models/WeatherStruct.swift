@@ -27,7 +27,7 @@ struct Coord: Codable {
 struct List: Codable {
     let dt, sunrise, sunset: Int?
     let temp: Temp?
-    let feelsLike: FeelsLike?
+    let feels_like: FeelsLike?
     let pressure, humidity: Int?
     let weather: [Weather]?
     let speed: Double?
@@ -36,7 +36,7 @@ struct List: Codable {
 
     enum CodingKeys: String, CodingKey {
         case dt, sunrise, sunset, temp
-        case feelsLike
+        case feels_like
         case pressure, humidity, weather, speed, deg, clouds, rain
     }
 }
@@ -56,21 +56,17 @@ struct Temp: Codable {
 struct Weather: Codable {
     let id: Int?
     let main: Main?
-    let weatherDescription: String?
-    let icon: Icon?
+    let description: String?
+    let icon: String?
 
     enum CodingKeys: String, CodingKey {
         case id, main
-        case weatherDescription
+        case description
         case icon
     }
 }
 
-enum Icon: String, Codable {
-    case the01D = "01d"
-    case the03D = "03d"
-    case the10D = "10d"
-}
+
 
 enum Main: String, Codable {
     case clear = "Clear"

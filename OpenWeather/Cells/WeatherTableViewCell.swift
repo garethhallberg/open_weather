@@ -15,7 +15,7 @@ class WeatherTableViewCell: UITableViewCell {
     @IBOutlet weak var minTemp: UILabel!
     @IBOutlet weak var maxTemp: UILabel!
     @IBOutlet weak var feelsLike: UILabel!
-    
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -30,7 +30,7 @@ class WeatherTableViewCell: UITableViewCell {
             let date = Date(timeIntervalSince1970: TimeInterval(dt))
             let dateFormatter = DateFormatter()
             dateFormatter.timeStyle = DateFormatter.Style.none //Set time style
-            dateFormatter.dateStyle = DateFormatter.Style.medium //Set date style
+            dateFormatter.dateStyle = DateFormatter.Style.long //Set date style
             dateFormatter.timeZone = .current
             let localDate = dateFormatter.string(from: date)
             dateLabel.text = "Date: \(localDate)"
@@ -46,7 +46,12 @@ class WeatherTableViewCell: UITableViewCell {
         }
         
         if let forecastFeelsLike = forecastViewViewModel.feelsLike?.day{
-            feelsLike.text = "Feels like: \(String(forecastFeelsLike))"
+            let celsius = Int(forecastFeelsLike - 273.15)
+            feelsLike.text = "Feels like: \(String(celsius))"
+        }
+        
+        if let weatherDescription = forecastViewViewModel.weather?[0].description{
+            descriptionLabel.text = "Weather Description \(weatherDescription)"
         }
         
         

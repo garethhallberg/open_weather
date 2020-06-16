@@ -34,7 +34,7 @@ struct ForecastViewViewModel {
     }
     
     var feelsLike: FeelsLike? {
-        return list.feelsLike
+        return list.feels_like
     }
     
     var pressure: Int? {

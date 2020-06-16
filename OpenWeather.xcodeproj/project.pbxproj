@@ -18,7 +18,7 @@
 		CF10ED122498AE0700D11813 /* OpenWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED112498AE0700D11813 /* OpenWeatherTests.swift */; };
 		CF10ED1D2498AFCD00D11813 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED1C2498AFCD00D11813 /* Constants.swift */; };
 		CF10ED222498B59A00D11813 /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED212498B59A00D11813 /* WeatherStore.swift */; };
-		CF10ED252498BE6100D11813 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED242498BE6100D11813 /* Weather.swift */; };
+		CF10ED252498BE6100D11813 /* WeatherStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED242498BE6100D11813 /* WeatherStruct.swift */; };
 		CF10ED2A2498DBC000D11813 /* ForecastSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED292498DBC000D11813 /* ForecastSearchViewModel.swift */; };
 		CF10ED2C2498DC4700D11813 /* ForecastViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED2B2498DC4700D11813 /* ForecastViewViewModel.swift */; };
 		CFB5A8432498E0B300CF02EC /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5A8412498E0B300CF02EC /* WeatherTableViewCell.swift */; };
@@ -54,7 +54,7 @@
 		CF10ED132498AE0700D11813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF10ED1C2498AFCD00D11813 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CF10ED212498B59A00D11813 /* WeatherStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
-		CF10ED242498BE6100D11813 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		CF10ED242498BE6100D11813 /* WeatherStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStruct.swift; sourceTree = "<group>"; };
 		CF10ED292498DBC000D11813 /* ForecastSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastSearchViewModel.swift; sourceTree = "<group>"; };
 		CF10ED2B2498DC4700D11813 /* ForecastViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewViewModel.swift; sourceTree = "<group>"; };
 		CFB5A8412498E0B300CF02EC /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		CF10ED232498BE5700D11813 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CF10ED242498BE6100D11813 /* Weather.swift */,
+				CF10ED242498BE6100D11813 /* WeatherStruct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -374,7 +374,7 @@
 				CF10ECFB2498AE0500D11813 /* AppDelegate.swift in Sources */,
 				CF10ECFD2498AE0500D11813 /* SceneDelegate.swift in Sources */,
 				CF10ED2C2498DC4700D11813 /* ForecastViewViewModel.swift in Sources */,
-				CF10ED252498BE6100D11813 /* Weather.swift in Sources */,
+				CF10ED252498BE6100D11813 /* WeatherStruct.swift in Sources */,
 				CFB5A8432498E0B300CF02EC /* WeatherTableViewCell.swift in Sources */,
 				CF10ED2A2498DBC000D11813 /* ForecastSearchViewModel.swift in Sources */,
 				CF10ED1D2498AFCD00D11813 /* Constants.swift in Sources */,
