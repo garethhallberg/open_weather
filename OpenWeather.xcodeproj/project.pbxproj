@@ -17,6 +17,8 @@
 		CF10ED072498AE0700D11813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF10ED052498AE0700D11813 /* LaunchScreen.storyboard */; };
 		CF10ED122498AE0700D11813 /* OpenWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED112498AE0700D11813 /* OpenWeatherTests.swift */; };
 		CF10ED1D2498AFCD00D11813 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED1C2498AFCD00D11813 /* Constants.swift */; };
+		CF10ED222498B59A00D11813 /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED212498B59A00D11813 /* WeatherStore.swift */; };
+		CF10ED252498BE6100D11813 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED242498BE6100D11813 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CF10ED112498AE0700D11813 /* OpenWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherTests.swift; sourceTree = "<group>"; };
 		CF10ED132498AE0700D11813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF10ED1C2498AFCD00D11813 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CF10ED212498B59A00D11813 /* WeatherStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
+		CF10ED242498BE6100D11813 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		D1ACA062DB9A3E109B53B091 /* Pods-OpenWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeather.debug.xcconfig"; path = "Target Support Files/Pods-OpenWeather/Pods-OpenWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,13 +117,12 @@
 		CF10ECF92498AE0500D11813 /* OpenWeather */ = {
 			isa = PBXGroup;
 			children = (
+				CF10ED232498BE5700D11813 /* Models */,
+				CF10ED202498B53B00D11813 /* Services */,
+				CF10ED1F2498B51C00D11813 /* ViewControllers */,
+				CF10ED1E2498B4F200D11813 /* Resources */,
 				CF10ECFA2498AE0500D11813 /* AppDelegate.swift */,
 				CF10ECFC2498AE0500D11813 /* SceneDelegate.swift */,
-				CF10ECFE2498AE0500D11813 /* ViewController.swift */,
-				CF10ED002498AE0500D11813 /* Main.storyboard */,
-				CF10ED032498AE0700D11813 /* Assets.xcassets */,
-				CF10ED052498AE0700D11813 /* LaunchScreen.storyboard */,
-				CF10ED082498AE0700D11813 /* Info.plist */,
 				CF10ED1C2498AFCD00D11813 /* Constants.swift */,
 			);
 			path = OpenWeather;
@@ -132,6 +135,41 @@
 				CF10ED132498AE0700D11813 /* Info.plist */,
 			);
 			path = OpenWeatherTests;
+			sourceTree = "<group>";
+		};
+		CF10ED1E2498B4F200D11813 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF10ED002498AE0500D11813 /* Main.storyboard */,
+				CF10ED032498AE0700D11813 /* Assets.xcassets */,
+				CF10ED052498AE0700D11813 /* LaunchScreen.storyboard */,
+				CF10ED082498AE0700D11813 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF10ED1F2498B51C00D11813 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF10ECFE2498AE0500D11813 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF10ED202498B53B00D11813 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF10ED212498B59A00D11813 /* WeatherStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF10ED232498BE5700D11813 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF10ED242498BE6100D11813 /* Weather.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,9 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF10ED222498B59A00D11813 /* WeatherStore.swift in Sources */,
 				CF10ECFF2498AE0500D11813 /* ViewController.swift in Sources */,
 				CF10ECFB2498AE0500D11813 /* AppDelegate.swift in Sources */,
 				CF10ECFD2498AE0500D11813 /* SceneDelegate.swift in Sources */,
+				CF10ED252498BE6100D11813 /* Weather.swift in Sources */,
 				CF10ED1D2498AFCD00D11813 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
