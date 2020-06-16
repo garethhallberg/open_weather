@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		CF10ED042498AE0700D11813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF10ED032498AE0700D11813 /* Assets.xcassets */; };
 		CF10ED072498AE0700D11813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF10ED052498AE0700D11813 /* LaunchScreen.storyboard */; };
 		CF10ED122498AE0700D11813 /* OpenWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED112498AE0700D11813 /* OpenWeatherTests.swift */; };
+		CF10ED1D2498AFCD00D11813 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED1C2498AFCD00D11813 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		CF10ED0D2498AE0700D11813 /* OpenWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF10ED112498AE0700D11813 /* OpenWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherTests.swift; sourceTree = "<group>"; };
 		CF10ED132498AE0700D11813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF10ED1C2498AFCD00D11813 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D1ACA062DB9A3E109B53B091 /* Pods-OpenWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeather.debug.xcconfig"; path = "Target Support Files/Pods-OpenWeather/Pods-OpenWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +87,6 @@
 				2CD46956E30E9B2D6398673F /* Pods-OpenWeatherTests.debug.xcconfig */,
 				B2E74872A074780E8DB19470 /* Pods-OpenWeatherTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,6 +120,7 @@
 				CF10ED032498AE0700D11813 /* Assets.xcassets */,
 				CF10ED052498AE0700D11813 /* LaunchScreen.storyboard */,
 				CF10ED082498AE0700D11813 /* Info.plist */,
+				CF10ED1C2498AFCD00D11813 /* Constants.swift */,
 			);
 			path = OpenWeather;
 			sourceTree = "<group>";
@@ -303,6 +305,7 @@
 				CF10ECFF2498AE0500D11813 /* ViewController.swift in Sources */,
 				CF10ECFB2498AE0500D11813 /* AppDelegate.swift in Sources */,
 				CF10ECFD2498AE0500D11813 /* SceneDelegate.swift in Sources */,
+				CF10ED1D2498AFCD00D11813 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
