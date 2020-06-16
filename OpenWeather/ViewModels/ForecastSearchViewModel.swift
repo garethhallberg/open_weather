@@ -13,7 +13,15 @@ import RxCocoa
 class ForecastSearchViewModel {
     private let weatherStore: WeatherStore
     
-    private let weatherList = BehaviorRelay<[List]>(value: [])
+    private let _weatherList = BehaviorRelay<[List]>(value: [])
+    
+    var weatherList: Driver<[List]> {
+       return _weatherList.asDriver()
+    }
+    
+    var numberOfWeathers: Int {
+       return _weatherList.value.count
+    }
     
     init(query: String, weatherStore: WeatherStore){
         self.weatherStore = weatherStore
@@ -33,10 +41,18 @@ class ForecastSearchViewModel {
             print(response)
             
             if let list = response.list{
-                self?.weatherList.accept(list)
+                self?._weatherList.accept(list)
             }
         }) { error in
             print(error)
         }
+    }
+    
+    
+    public func viewModelForWeather(at index: Int) -> ForecastViewViewModel? {
+        guard index < _weatherList.value.count else {
+            return nil
+        }
+        return ForecastViewViewModel(list: _weatherList.value[index])
     }
 }

@@ -20,6 +20,9 @@
 		CF10ED222498B59A00D11813 /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED212498B59A00D11813 /* WeatherStore.swift */; };
 		CF10ED252498BE6100D11813 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED242498BE6100D11813 /* Weather.swift */; };
 		CF10ED2A2498DBC000D11813 /* ForecastSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED292498DBC000D11813 /* ForecastSearchViewModel.swift */; };
+		CF10ED2C2498DC4700D11813 /* ForecastViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED2B2498DC4700D11813 /* ForecastViewViewModel.swift */; };
+		CFB5A8432498E0B300CF02EC /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5A8412498E0B300CF02EC /* WeatherTableViewCell.swift */; };
+		CFB5A8442498E0B300CF02EC /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB5A8422498E0B300CF02EC /* WeatherTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		CF10ED212498B59A00D11813 /* WeatherStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
 		CF10ED242498BE6100D11813 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		CF10ED292498DBC000D11813 /* ForecastSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastSearchViewModel.swift; sourceTree = "<group>"; };
+		CF10ED2B2498DC4700D11813 /* ForecastViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewViewModel.swift; sourceTree = "<group>"; };
+		CFB5A8412498E0B300CF02EC /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		CFB5A8422498E0B300CF02EC /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		D1ACA062DB9A3E109B53B091 /* Pods-OpenWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeather.debug.xcconfig"; path = "Target Support Files/Pods-OpenWeather/Pods-OpenWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +125,7 @@
 		CF10ECF92498AE0500D11813 /* OpenWeather */ = {
 			isa = PBXGroup;
 			children = (
+				CFA43BA62498DFE90097BF90 /* Cells */,
 				CF10ED262498C6C000D11813 /* ViewModels */,
 				CF10ED082498AE0700D11813 /* Info.plist */,
 				CF10ED232498BE5700D11813 /* Models */,
@@ -179,8 +186,18 @@
 			isa = PBXGroup;
 			children = (
 				CF10ED292498DBC000D11813 /* ForecastSearchViewModel.swift */,
+				CF10ED2B2498DC4700D11813 /* ForecastViewViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CFA43BA62498DFE90097BF90 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CFB5A8412498E0B300CF02EC /* WeatherTableViewCell.swift */,
+				CFB5A8422498E0B300CF02EC /* WeatherTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB5A8442498E0B300CF02EC /* WeatherTableViewCell.xib in Resources */,
 				CF10ED072498AE0700D11813 /* LaunchScreen.storyboard in Resources */,
 				CF10ED042498AE0700D11813 /* Assets.xcassets in Resources */,
 				CF10ED022498AE0500D11813 /* Main.storyboard in Resources */,
@@ -355,7 +373,9 @@
 				CF10ECFF2498AE0500D11813 /* ViewController.swift in Sources */,
 				CF10ECFB2498AE0500D11813 /* AppDelegate.swift in Sources */,
 				CF10ECFD2498AE0500D11813 /* SceneDelegate.swift in Sources */,
+				CF10ED2C2498DC4700D11813 /* ForecastViewViewModel.swift in Sources */,
 				CF10ED252498BE6100D11813 /* Weather.swift in Sources */,
+				CFB5A8432498E0B300CF02EC /* WeatherTableViewCell.swift in Sources */,
 				CF10ED2A2498DBC000D11813 /* ForecastSearchViewModel.swift in Sources */,
 				CF10ED1D2498AFCD00D11813 /* Constants.swift in Sources */,
 			);
