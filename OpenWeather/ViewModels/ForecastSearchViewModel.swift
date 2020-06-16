@@ -7,9 +7,13 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
-class ForecastViewModel {
+class ForecastSearchViewModel {
     private let weatherStore: WeatherStore
+    
+    private let weatherList = BehaviorRelay<[List]>(value: [])
     
     init(query: String, weatherStore: WeatherStore){
         self.weatherStore = weatherStore
@@ -27,7 +31,11 @@ class ForecastViewModel {
         weatherStore.searchWeather(query: query, params: nil, successHandler: { [weak self] (response) in
             print(response)
             print(response)
-        }) { [weak self] (error) in
+            
+            if let list = response.list{
+                self?.weatherList.accept(list)
+            }
+        }) { error in
             print(error)
         }
     }
