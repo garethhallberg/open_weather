@@ -10,19 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    var forecastViewModel: ForecastViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let weatherStore = WeatherStore()
-        weatherStore.searchWeather(query: "Hull", params: nil, successHandler: { [weak self] (response) in
-            print(response)
-            print(response)
-        }) { [weak self] (error) in
-            print(error)
-        }
+        forecastViewModel = ForecastViewModel(query: "Hull", weatherStore: WeatherStore.shared)
+        
+//        movieSearchViewViewModel = MovieSearchViewViewModel(query: searchBar.rx.text.orEmpty.asDriver(), movieService: MovieStore.shared)
     }
 
 

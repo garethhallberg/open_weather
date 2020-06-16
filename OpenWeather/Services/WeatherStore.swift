@@ -10,7 +10,7 @@ import Foundation
 
 
 class WeatherStore {
-    
+    public static let shared = WeatherStore()
     init() {}
     private let apiKey = K.APIKey
     private let baseAPIURL = "https://api.openweathermap.org/data/2.5"
