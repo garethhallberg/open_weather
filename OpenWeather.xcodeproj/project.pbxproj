@@ -21,6 +21,7 @@
 		CF10ED252498BE6100D11813 /* WeatherStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED242498BE6100D11813 /* WeatherStruct.swift */; };
 		CF10ED2A2498DBC000D11813 /* ForecastSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED292498DBC000D11813 /* ForecastSearchViewModel.swift */; };
 		CF10ED2C2498DC4700D11813 /* ForecastViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10ED2B2498DC4700D11813 /* ForecastViewViewModel.swift */; };
+		CF2B6590249BC78900390BBF /* ForecastViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B658F249BC78900390BBF /* ForecastViewViewModelTests.swift */; };
 		CFB5A8432498E0B300CF02EC /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5A8412498E0B300CF02EC /* WeatherTableViewCell.swift */; };
 		CFB5A8442498E0B300CF02EC /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB5A8422498E0B300CF02EC /* WeatherTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		CF10ED242498BE6100D11813 /* WeatherStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStruct.swift; sourceTree = "<group>"; };
 		CF10ED292498DBC000D11813 /* ForecastSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastSearchViewModel.swift; sourceTree = "<group>"; };
 		CF10ED2B2498DC4700D11813 /* ForecastViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewViewModel.swift; sourceTree = "<group>"; };
+		CF2B658F249BC78900390BBF /* ForecastViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewViewModelTests.swift; sourceTree = "<group>"; };
 		CFB5A8412498E0B300CF02EC /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		CFB5A8422498E0B300CF02EC /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		D1ACA062DB9A3E109B53B091 /* Pods-OpenWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeather.debug.xcconfig"; path = "Target Support Files/Pods-OpenWeather/Pods-OpenWeather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				CF10ED112498AE0700D11813 /* OpenWeatherTests.swift */,
+				CF2B658F249BC78900390BBF /* ForecastViewViewModelTests.swift */,
 				CF10ED132498AE0700D11813 /* Info.plist */,
 			);
 			path = OpenWeatherTests;
@@ -385,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2B6590249BC78900390BBF /* ForecastViewViewModelTests.swift in Sources */,
 				CF10ED122498AE0700D11813 /* OpenWeatherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
