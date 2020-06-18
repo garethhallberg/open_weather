@@ -37,8 +37,7 @@ class ForecastSearchViewModel {
             return
         }
         weatherStore.searchWeather(query: query, params: nil, successHandler: { [weak self] (response) in
-            print(response)
-            print(response)
+            
             
             if let list = response.list{
                 self?._weatherList.accept(list)

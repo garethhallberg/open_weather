@@ -67,16 +67,88 @@ class ForecastViewViewModelTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDt() {
+        
+        let forecastViewViewModel = ForecastViewViewModel(list: weatherList!)
+        let dt = forecastViewViewModel.dt
+        
+        XCTAssert(dt == 1592481600, "dt value read correctly")
     }
+    
+    func testSunrise() {
+        
+        let forecastViewViewModel = ForecastViewViewModel(list: weatherList!)
+        let sunrise = forecastViewViewModel.sunrise
+        
+        XCTAssert(sunrise == 1592451007, "sunrise value read correctly")
+    }
+    
+    func testSunset() {
+        
+        let forecastViewViewModel = ForecastViewViewModel(list: weatherList!)
+        let sunset = forecastViewViewModel.sunset
+        
+        XCTAssert(sunset == 1592512500, "sunset value read correctly")
+    }
+    
+    func testTempDay() {
+        
+        let forecastViewViewModel = ForecastViewViewModel(list: weatherList!)
+        let temp = forecastViewViewModel.temp
+        
+        let day = temp?.day
+        
+        XCTAssert(day == 287.48, "temp.day value read correctly")
+    }
+    
+    func testTempMin() {
+        let forecastViewViewModel = ForecastViewViewModel(list: weatherList!)
+        let temp = forecastViewViewModel.temp
+        
+        let min = temp?.min
+        
+        XCTAssert(min == 285.83, "temp.min value read correctly")
+    }
+    
+    func testTempMax() {
+        let forecastViewViewModel = ForecastViewViewModel(list: weatherList!)
+        let temp = forecastViewViewModel.temp
+        
+        let max = temp?.max
+        
+        XCTAssert(max == 288.08, "temp.max value read correctly")
+    }
+    
+    func testTempNight() {
+        let forecastViewViewModel = ForecastViewViewModel(list: weatherList!)
+        let temp = forecastViewViewModel.temp
+        
+        let night = temp?.night
+        
+        XCTAssert(night == 285.83, "temp.night value read correctly")
+    }
+    
+    func testTempEve() {
+        let forecastViewViewModel = ForecastViewViewModel(list: weatherList!)
+        let temp = forecastViewViewModel.temp
+        
+        let eve = temp?.eve
+        
+        XCTAssert(eve == 288.08, "temp.eve value read correctly")
+    }
+    
+    func testTempMorn() {
+        let forecastViewViewModel = ForecastViewViewModel(list: weatherList!)
+        let temp = forecastViewViewModel.temp
+        
+        let morn = temp?.morn
+        
+        XCTAssert(morn == 287.48, "temp.morn value read correctly")
+    }
+    
+    
+    
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    
 
 }
