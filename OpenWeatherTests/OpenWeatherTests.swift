@@ -18,6 +18,13 @@ class OpenWeatherTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func textSum(){
+        let a = 2
+        let b = 4
+        let c = a + b
+        XCTAssert(c == 6, "c should equal 6")
+    }
 
     func testExample() {
         // This is an example of a functional test case.
