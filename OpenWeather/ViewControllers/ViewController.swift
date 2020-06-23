@@ -38,8 +38,6 @@ class ViewController: UIViewController {
         tableView.register(UINib(nibName: "WeatherTableViewCell", bundle: nil), forCellReuseIdentifier: "WeatherTableViewCell")
     }
     
-    
-
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
